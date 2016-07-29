@@ -60,9 +60,10 @@ This is [an example](http://example.com/ "Title") inline link.
 #### 插入图片（![这里填图片的名字]（图片URL地址））
 ![我的图片](https://avatars1.githubusercontent.com/u/17285294?v=3&u=2b866a00a0c63bf0816279bdf54f3eaca29dfbc8&s=140)
 
-#### 代码（用一组''包裹）
+#### 代码（用一组`包裹）
 Use the `printf()` function.
 
 #### 自动连接
 <http://example.com/>
+
 <address@example.com>
