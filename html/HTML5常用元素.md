@@ -62,6 +62,7 @@
 * `<link>`：定义文档与外部资源之间的关系
 
     >常用于链接样式表
+
     `<link rel="stylesheet" type="type/css" href="style.css" />`
 
 * `<title>`：定义文档标题
@@ -82,14 +83,23 @@
     >`http-equiv`：指定元信息的名称（具有特殊意义，帮助浏览器正确处理网页内容）
 
     >>`Expires`：指定网页过期时间
+
         `<mata http-equiv="Expires" content="Wed Aug 3 18:08:08 CST 2016" />`
+
     >>`Pragma`：指定禁止浏览器从本地缓存调阅页面内容
+
         `<mata http-equiv="Pragma" content="no-cache" />`
+
     >>`Refresh`：指定浏览器自动刷新指定页面
+
         `<mata http-equiv="Refresh" content="5;URL=http://www.baidu.com" />`
+
     >>`Set-Cookie`：设置Cookie。网页过期，客户端上的Cookie也将被删除
+
         `<mata http-equiv="Set-Cookie" content="name=value expires=Wed Aug 3 18:08:08 CST 2016,path=/" />`
+
     >>`content-Type`：设置页面的内容类型和所用的字符集
+    
         `<mata http-equiv="content-Type" content="text/html;charset=UTF-8" />`
 
     >`name`：指定元信息的名称
