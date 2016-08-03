@@ -62,7 +62,7 @@
 * `<link>`：定义文档与外部资源之间的关系
 
     >常用于链接样式表
-        <link rel="stylesheet" type="type/css" href="style.css" />
+    <link rel="stylesheet" type="type/css" href="style.css" />
 
 
 * `<title>`：定义文档标题
@@ -92,7 +92,7 @@
         <mata http-equiv="Set-Cookie" content="name=value expires=Wed Aug 3 18:08:08 CST 2016,path=/" />
     >>`content-Type`：设置页面的内容类型和所用的字符集
         <mata http-equiv="content-Type" content="text/html;charset=UTF-8" />
-        
+
     >`name`：指定元信息的名称
 
     >`content`：指定元信息的值
