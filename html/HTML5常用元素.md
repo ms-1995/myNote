@@ -62,7 +62,7 @@
 * `<link>`：定义文档与外部资源之间的关系
 
     >常用于链接样式表
-    <link rel="stylesheet" type="type/css" href="style.css" />
+            <link rel="stylesheet" type="type/css" href="style.css" />
 
 
 * `<title>`：定义文档标题
