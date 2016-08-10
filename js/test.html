@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		'use strict';
+		//使用普通函数和箭头函数求年龄
+		// let obj1 = {
+		// 	birth: 1990,
+		// 	getAge: function () {
+		// 		let b = this.birth; 
+		// 		let that = this;
+		// 		let fn = function () {
+		// 			return new Date().getFullYear() - that.birth; 
+		// 		};
+		// 		return fn();
+		// 	}
+		// };
+		// let obj2 = {
+		// 	birth: 1990,
+		// 	getAge: function(){
+		// 		let b =this.birth;
+		// 		let fn = ()=> new Date().getFullYear() -this.birth;
+		// 		return fn();
+		// 	}
+		// }
+		// console.log(obj1.getAge());
+		// console.log(obj2.getAge());
+		
+
+		//箭头函数将1*1，2*2，3*3存入arr中
+		// function count(){
+		// 	let arr= [];
+		// 	for(let i = 1; i<=3; i++){
+		// 		arr.push(()=>i*i);
+		// 	}
+		// 	return arr;
+		// }
+
+		//闭包,当调用函数时才会执行函数体
+		// var results = count();
+		// var f1 = results[0];
+		// var f2 = results[1];
+		// var f3 = results[2];
+		// var a,b,c;
+		// a = f1();
+		// b = f2();
+		// c = f3();
+		// console.log(a+","+b+","+c);
+
+
+		//generator(生成器) 在控制台打印指定次数的current_id,yield可以多次返回值
+		// function* next_id(x){
+		// 	let current_id = 0;
+		// 	while(current_id<x)
+		// 		yield ++current_id;
+		// }
+		// for(let x of next_id(15)){
+		// 	console.log(x);
+		// }
+
+		//Date对象
+		// var now = new Date();
+		// now; // Wed Jun 24 2015 19:49:22 GMT+0800 (CST)
+		// now.getFullYear(); // 2015, 年份
+		// now.getMonth(); // 5, 月份，注意月份范围是0~11，5表示六月
+		// now.getDate(); // 24, 表示24号
+		// now.getDay(); // 3, 表示星期三
+		// now.getHours(); // 19, 24小时制
+		// now.getMinutes(); // 49, 分钟
+		// now.getSeconds(); // 22, 秒
+		// now.getMilliseconds(); // 875, 毫秒数
+		// now.getTime(); // 1435146562875, 以number形式表示的时间戳
+		// var d1 = new Date(2015,5,19,20,15,30,123);
+		// var d2 = Date.parse('2015-06-24T19:49:22.875+08:00');//转换为number类型的时间戳（1970-01-01-00：00：00到当前时间的毫秒数）
+		// var d3 = new Date(d2);
+		// console.log(d1);
+		// console.log(d2);
+		// console.log(d3);
+		// console.log(d3.toLocaleString());
+		// console.log(d3.toUTCString());
+
+
+		// var xiaoming = {
+		// 	name:'小明',
+		// 	age:14,
+		// 	toJSON:function(){
+		// 		return{
+		// 			'Name':this.name
+		// 		};
+		// 	}
+		// }
+		// let json = JSON.stringify(xiaoming);
+		// console.log(json);
+		// json = JSON.parse(json,function(key,value){
+		// 	if(key === 'Name'){
+		// 		return value+'同学';
+		// 	}
+		// 	return value;
+		// });
+		// console.log(json);
+		
+
+</script>
+</body>
+</html>
+
