@@ -41,3 +41,5 @@
     git push origin :refs/tags/版本号 //删除远程标签
 #### 其他
     git config --global alias.st(别名) status //设置别名
+    
+    创建.gitignore文件，可以设置忽略git目录
