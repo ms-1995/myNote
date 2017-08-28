@@ -77,6 +77,18 @@
 
     * query：为loaders提供额外的设置选项（可选）
 
-* Bable
+* Babel
 
-    模块化的包，核心功能位于`babel-core`npm包中，还可以安装其他拓展功能的包如`babel-preset-es2015`,`babel-preset-react`等
+    * 模块化的包，核心功能位于`babel-core`npm包中，还可以安装其他拓展功能的包如`babel-preset-es2015`,`babel-preset-react`等
+
+    * 通常情况下将css和js打包到同一个文件中。
+
+    * webpack把所有文件都当做模块处理。
+
+    * CSS moudle：将js模块化思想带入css中，配置后可以直接将CSS类名传递到组件代码中，切只对当前组件有效，不会造成在不同模块下使用相同类名造成冲突。
+
+    * loaders是在打包构建过程中用来处理源文件的（JSX，Scss，Less..），一次处理一个，插件并不直接操作单个文件，它直接对整个构建过程其作用。
+
+* 插件
+
+    要使用某个插件，我们需要通过npm安装它，然后要做的就是在webpack配置中的plugins关键字部分添加该插件的一个实例
