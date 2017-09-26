@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css" media="screen">
+    .content {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .checkbox-content {
+        text-align: center;
+    }
+
+    #displayCheckbox,
+    .test_more,
+    .test_hide,
+    #displayCheckbox:checked~.test_label .test_show {
+        display: none;
+    }
+
+    #displayCheckbox:checked~.test_more,
+    #displayCheckbox:checked~.test_label .test_hide {
+        display: block;
+    }
+
+    .radio-tab input,
+    .radio-tab p {
+        display: none;
+    }
+
+    .radio-text:checked~p {
+        display: block;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="checkbox-content">
+            <input type="checkbox" id="displayCheckbox" name="">
+            <span class="test_more">This is a text</span>
+            <label class="test_label" for="displayCheckbox">
+                <span class="test_hide">收起↑</span>
+                <span class="test_show">展开↓</span>
+            </label>
+        </div>
+        <div class="radio-content">
+            <div class="radio-tab">
+                <input type="radio" id="radio-text1" class="radio-text" name="tab">
+                <label for="radio-text1">第1个选项卡</label>
+                <p>这是第一个选项卡的内容</p>
+            </div>
+            <div class="radio-tab">
+                <input type="radio" id="radio-text2" class="radio-text" name="tab">
+                <label for="radio-text2">第2个选项卡</label>
+                <p>这是第二个选项卡的内容</p>
+            </div>
+            <div class="radio-tab">
+                <input type="radio" id="radio-text3" class="radio-text" name="tab">
+                <label for="radio-text3">第3个选项卡</label>
+                <p>这是第三个选项卡的内容</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
