@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    class Person {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        stringSentence() {
+            return `${this.name} is ${this.age} years old`;
+        }
+    }
+    let Person1 = new Person("hihihi", 1);
+    console.log(Person1.age);
+    console.log(Person1.stringSentence());
+    </script>
+</body>
+
+</html>

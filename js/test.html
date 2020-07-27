@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
+
 <body>
+	<input type="text">
 	<script>
-		'use strict';//
+		let input = document.querySelector('input')
+		input.onkeyup = debounce(() => {
+			console.log(input.value)
+		}, 1000)
+
+		function debounce(func, wait) {
+			var timeout;
+			return function () {
+				clearTimeout(timeout)
+				timeout = setTimeout(func, wait);
+			}
+		}
+		'use strict'; //
 		//使用普通函数和箭头函数求年龄
 		// let obj1 = {
 		// 	birth: 1990,
@@ -29,7 +44,7 @@
 		// }
 		// console.log(obj1.getAge());
 		// console.log(obj2.getAge());
-		
+
 
 		//箭头函数将1*1，2*2，3*3存入arr中
 		// function count(){
@@ -102,9 +117,7 @@
 		// 	return value;
 		// });
 		// console.log(json);
-		
-
-</script>
+	</script>
 </body>
-</html>
 
+</html>
